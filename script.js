@@ -19,15 +19,21 @@ const operacionSuma = () => {
 }
 
 const operacionRest = () => {
-    inputR = rest(inputA.value, inputB.value)
+    const x = parseInt(inputA.value)
+    const y = parseInt(inputB.value)
+    inputR.value = rest(x,y)
 }
 
 const operacionMult = () => {
-    inputR = mult(inputA.value, inputB.value)
+    const x = parseInt(inputA.value)
+    const y = parseInt(inputB.value)
+    inputR.value = mult(x,y)
 }
 
 const operacionDivi = () => {
-    inputR = divi(inputA.value, inputB.value)
+    const x = parseInt(inputA.value)
+    const y = parseInt(inputB.value)
+    inputR.value = divi(x,y)
 }
 
 buttonSuma.addEventListener("click", operacionSuma)
